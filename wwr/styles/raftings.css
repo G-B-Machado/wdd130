@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --primary-color: #CBA135;
+    --secondary-color: ;
+    --accent1-color: #7FEFBD;
+    --accent2-color: ;
+
+    --heading-font: "Ubuntu Sans Mono", monospace;
+    --paragraph-font: "Ubuntu Sans Mono", monospace;
+
+    --nav-background-color: #F3EFE0;
+    --nav-link-color: #CBA135;
+    --nav-hover-link-color: #7FEFBD;
+    --nav-hover-background-color: #CBA135;
+}
+body{
+    font-family: var(--paragraph--font);
+    max-width: 960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+p{
+    padding: 25px;
+}
+nav{
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited{
+    color: var(--nav-link-color)
+}
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+.hero{
+    position: relative;
+}
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+    float: right;
+}
+.hero h1{
+    margin-left: 25%;
+    position: absolute;
+}
+.hero article{
+    margin-top: 15%;
+    position: absolute;
+}
+.hero article img{
+    float: right;
+    width: 50%;
+    opacity: 0.92;
+}
+.hero article p{
+    opacity: 0.8;
+}
+footer a{
+    text-decoration: none;
+}
+footer img{
+    width: 25px;
+}
