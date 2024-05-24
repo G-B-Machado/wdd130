@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page for contact us">
+    <meta name="author" content="Guilherme Machado">
+    <title>Torrent Trails - Contact Us</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header class="header_grid">
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <nav>
+            <a href="site-plan-rafting.html">Home</a>
+            <a href="#">About US</a>
+            <a href="#">Trips</a>   
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <main class="main_grid">
+        <section class="section_employee">
+            <h2>Our Team</h2>
+            <figure>
+                <img src="images/employee1.png" alt="Fulano Smith">
+                <figcaption>Fulano Smith</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.png" alt="Siclano Olwen">
+                <figcaption>Siclano Olwen</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.png" alt="Jhon Travolta">
+                <figcaption>Jhon Travolta</figcaption>
+            </figure>
+        </section>
+        <div>
+            <h1>Contact Us</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                <label>Purpose of Message:</label>
+                <div class="radio-group">
+                    <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                    <label for="general-inquiry">General Inquiry</label>
+                    <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+                    <label for="reservation-question">Reservation Question</label>
+                    <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                    <label for="website-suggestion">Website Suggestion</label>
+                </div>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <section class="company_information">
+            <p id="adress">Av. Pref. Acácio Garibaldi São Thiago - Lagoa da Conceição </p>                
+            <p id="phone">+55 48 999991499 </p>
+            <p id="email">torrenttrails@gmail.com</p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.7090485523273!2d-48.44947997144221!3d-27.62958946033708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273c38419b2c05%3A0x48dfaa94905c943f!2sPraia%20da%20Joaquina!5e0!3m2!1spt-BR!2sbr!4v1716518989827!5m2!1spt-BR!2sbr"  height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+        </section>
+    </main>
+    <footer>
+        <p>©2024 🌴 Rafting Site Document 🌴 Guilherme Machado 🌴 WDD 130</p>
+        <nav class="sociallinks">
+            <a href="https://www.youtube.com/">
+                <img src="images/3225180_app_logo_media_popular_social_icon.png" alt="Logo Youtube">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/3225191_app_instagram_logo_media_popular_icon.png" alt="Logo Instagram">
+            </a>
+            <a href="https://pt-br.facebook.com/">
+                <img src="images/3225194_app_facebook_logo_media_popular_icon.png" alt="Logo Facebook">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
