@@ -106,12 +106,11 @@ footer img{
 }
 
 .form-container {
-    background-color: #ffffff;
+    background-color: var(--nav-background-color);
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+    width: 94%;
 }
 
 form {
@@ -148,7 +147,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::pla
     margin-right: 10px;
 }
 
-input[type="submit"] {
+button {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -159,8 +158,9 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
-    background-color: var(--accent2-color);
+button:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
 }
 .company_information{
     display: grid;
@@ -179,7 +179,7 @@ input[type="submit"]:hover {
     grid-column: 2/3;
     grid-row: 1/2;
 }
-#email{
+#company_email{
     grid-column: 3/4;
     grid-row: 1/2;
 }
@@ -187,4 +187,6 @@ iframe{
     width: 100%;
     grid-column: 1/4;
     grid-row: 2/3;
+    height: "150";
+    border: none; 
 }
