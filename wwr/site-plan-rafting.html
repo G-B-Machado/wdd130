@@ -3,49 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan</title>
-    <meta name="description" content="The site contains a purpose to help us about understand a Rafting and show a relative information about.">
+    <meta name="description" content="Welcome to Torrent Trails">
     <meta name="author" content="Guilherme Machado">
+    <title>Torrent Trails - Home</title>
     <link rel="stylesheet" href="styles/site-plan-rafting.css">
 </head>
 <body>
-    <h1>Rafting Site Plan</h1>
-    <div>Guilherme Machado</div>
-    <main>
-        <h2>Overview</h2>
-        <h3>Purpose</h3>
-        <p>Our purpose is ignite the spirit of adventure within every individual who steps onto our rafts. We strive to create unforgettable experiences that blend the thrill of whitewater rafting with the beauty of nature, fostering moments of connection, courage, and exhilaration. Through expert guidance, top-tier equipment, and a commitment to safety, we aim to inspire confidence in our adventurers as they navigate the rapids and conquer new challenges. Join us as we embark on a journey of discovery, forging memories that last a lifetime.</p>
-        <h3>Audience</h3>
-        <p>
-            "We cater to adventurous young couples seeking an exhilarating escape into the heart of nature. Our experiences are designed to ignite the spirit of exploration and foster unforgettable moments of togetherness on the river. Whether you're celebrating a milestone, embarking on a romantic getaway, or simply craving an adrenaline-fueled adventure with your partner, our expertly guided rafting trips offer the perfect blend of excitement, tranquility, and shared thrill. Join us as we craft memories that strengthen the bond between you and your loved one, amidst the breathtaking beauty of the great outdoors."</p>
-        <h2>Branding</h2>
-        <h3>Website Logo</h3>
-        <img src="images/logo.png" alt="Rafting Site Logo">
-        <h2>Style Guide</h2>
-        <h3>Color Palette</h3>
-        <p>Palette URL: <a href="https://coolors.co/000000-f3efe0-7fefbd-cba135-000000" target="_blank">https://coolors.co/000000-f3efe0-7fefbd-cba135-000000</a></p>
-        <h3>Typografy</h3>
-        <h4>Headgins Exampple Font</h4>
-        <h4>Normal Text/Paragraph Example Font</h4>
-        <p></p>
-        <h4>Colored Callout Example Font</h4>
-        <p></p>
-        <h3>Navigation</h3>
+    <header class="header_grid">
+        <img src="images/logo.png" alt="Torrent Trails Logo">
         <nav>
-            <a href="#">Home</a>
+            <a href="site-plan-rafting.html">Home</a>
             <a href="about.html">About US</a>
-            <a href="#">Trips</a>   
-            <a href="#">Contact Us</a>
+            <a href="trips.html">Trips</a>   
+            <a href="contact.html">Contact Us</a>
         </nav>
-        
-        <h2>Wireframes</h2>
-        <h3>Home Page Wireframes</h3>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-home.png" alt="Home Page Wireframe Example Design" width="700">
-        <h3>About Us Page Wireframe</h3>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png" alt="About Us Page Wireframe Design" width="700">
+    </header>
+    <main class="main_grid">
+        <section class="hero">
+            <img src="images/home_hero.png" alt="Hero Image">
+            <h1>Welcome to Torrent Trails</h1>
+            <p>Your adventure starts here. Explore our amazing trips and experience the thrill of a lifetime!</p>
+            <a href="trips.html" class="cta-button">Explore Trips</a>
+        </section>
+        <section class="company_info">
+            <h2>About Us</h2>
+            <p>At Torrent Trails, we are dedicated to providing the best adventure experiences. Our team of expert guides ensures safety and fun for all participants. Join us for an unforgettable journey through nature's most breathtaking landscapes.</p>
+        </section>
+        <section class="highlights">
+            <h2>Why Choose Us?</h2>
+            <div class="highlight_item">
+                <img src="images/highlight1.png" alt="Experienced Guides">
+                <h3>Experienced Guides</h3>
+                <p>Our guides are certified and experienced in leading adventure trips.</p>
+            </div>
+            <div class="highlight_item">
+                <img src="images/highlight2.png" alt="Safety First">
+                <h3>Safety First</h3>
+                <p>We prioritize your safety with top-notch equipment and protocols.</p>
+            </div>
+            <div class="highlight_item">
+                <img src="images/highlight3.png" alt="Unmatched Scenery">
+                <h3>Unmatched Scenery</h3>
+                <p>Explore some of the most beautiful and remote places on earth.</p>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>Adventure Gallery</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <figure>
+                        <img src="images/gallery1.png" alt="Adventure Image 1">
+                        <figcaption>Adventure Image 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/gallery2.png" alt="Adventure Image 2">
+                        <figcaption>Adventure Image 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/gallery3.png" alt="Adventure Image 3">
+                        <figcaption>Adventure Image 3</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/gallery4.png" alt="Adventure Image 4">
+                        <figcaption>Adventure Image 4</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>©2024 🌴 Rafting Site Document 🌴 Guilherme Machado 🌴 WDD 130</p>
+        <nav class="sociallinks">
+            <a href="https://www.youtube.com/">
+                <img src="images/3225180_app_logo_media_popular_social_icon.png" alt="Logo Youtube">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/3225191_app_instagram_logo_media_popular_icon.png" alt="Logo Instagram">
+            </a>
+            <a href="https://pt-br.facebook.com/">
+                <img src="images/3225194_app_facebook_logo_media_popular_icon.png" alt="Logo Facebook">
+            </a>
+        </nav>
     </footer>
 </body>
 </html>

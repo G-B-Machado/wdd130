@@ -18,6 +18,9 @@ body{
     padding: 20px;
     margin: 0 auto
 }
+header{
+    margin-bottom: 30px;
+}
 header img{
     grid-column: 1/2;
     grid-row: 1/2;

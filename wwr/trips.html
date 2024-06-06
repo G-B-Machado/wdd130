@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The site talks about the trips we offer">
+    <meta name="author" content="Guilherme Machado">
+    <title>Torrent Trails - Trips</title>
+    <link rel="stylesheet" href="styles/trips.css">
+</head>
+<body>
+    <header class="header_grid">
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <nav>
+            <a href="site-plan-rafting.html">Home</a>
+            <a href="about.html">About US</a>
+            <a href="trips.html">Trips</a>   
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main class="main_grid">
+        <div class="hero">
+            <img src="images/trips_hero.png" alt="Hero Image">
+            <h1>Explore Our Trips</h1>
+        </div>
+        <section class="introduction">
+            <h2>Why Choose Us?</h2>
+            <article>
+                <img src="images/guide.png" alt="Tour Guide">
+                <p>Join us for an unforgettable adventure! Our trips are designed to offer the best experience with safety and fun in mind. From serene river rides to thrilling rapids, we have something for everyone.</p>
+            </article>
+        </section>
+        <section class="section_trips">
+            <h2>Our Trips</h2>
+            <div class="trip">
+                <img src="images/trip1.png" alt="Mountain Expedition">
+                <h3>Mountain Expedition</h3>
+                <p>Experience the breathtaking views and challenging trails of our mountain expedition. Perfect for adventure seekers.</p>
+            </div>
+            <div class="trip">
+                <img src="images/trip2.png" alt="River Adventure">
+                <h3>River Adventure</h3>
+                <p>Navigate through exciting rapids and enjoy the beauty of the river on our guided river adventure.</p>
+            </div>
+            <div class="trip">
+                <img src="images/trip3.png" alt="Forest Hike">
+                <h3>Forest Hike</h3>
+                <p>Immerse yourself in the tranquility of nature with our guided forest hikes, suitable for all skill levels.</p>
+            </div>
+        </section>
+        <section class="section_gallery">
+            <h2>Adventure Gallery</h2>
+            <div class="carousel">
+                <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel-track">
+                    <figure>
+                        <img src="images/gallery1.png" alt="Adventure Image 1">
+                        <figcaption>Adventure Image 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/gallery2.png" alt="Adventure Image 2">
+                        <figcaption>Adventure Image 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/gallery3.png" alt="Adventure Image 3">
+                        <figcaption>Adventure Image 3</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/gallery4.png" alt="Adventure Image 4">
+                        <figcaption>Adventure Image 4</figcaption>
+                    </figure>
+                </div>
+                <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2024 🌴 Rafting Site Document 🌴 Guilherme Machado 🌴 WDD 130</p>
+        <nav class="sociallinks">
+            <a href="https://www.youtube.com/">
+                <img src="images/3225180_app_logo_media_popular_social_icon.png" alt="Logo Youtube">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/3225191_app_instagram_logo_media_popular_icon.png" alt="Logo Instagram">
+            </a>
+            <a href="https://pt-br.facebook.com/">
+                <img src="images/3225194_app_facebook_logo_media_popular_icon.png" alt="Logo Facebook">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
+<script>
+    let currentSlide = 0;
+    
+    function moveSlide(direction) {
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const totalSlides = slides.length;
+    
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        const newTransformValue = -currentSlide * 100;
+        track.style.transform = `translateX(${newTransformValue}%)`;
+    }
+    </script>
+    
